@@ -45,7 +45,7 @@ function JobApplication() {
       data.append("resume", resume);
 
       const response = await fetch(
-        "http://localhost:5000/api/applications",
+        "https://riyadvi-website-huhp.onrender.com/api/applications",
         {
           method: "POST",
           body: data,

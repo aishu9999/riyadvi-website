@@ -25,11 +25,11 @@ const [applicationList, setApplicationList] = useState([]);
           leadsResponse,
           applicationsResponse,
         ] = await Promise.all([
-          fetch("http://localhost:5000/api/contact"),
-          fetch("http://localhost:5000/api/consultation"),
-          fetch("http://localhost:5000/api/health-checkup"),
-          fetch("http://localhost:5000/api/lead-magnet"),
-          fetch("http://localhost:5000/api/applications"),
+          fetch("https://riyadvi-website-huhp.onrender.com/api/contact"),
+          fetch("https://riyadvi-website-huhp.onrender.com/api/consultation"),
+          fetch("https://riyadvi-website-huhp.onrender.com/api/health-checkup"),
+          fetch("https://riyadvi-website-huhp.onrender.com/api/lead-magnet"),
+          fetch("https://riyadvi-website-huhp.onrender.com/api/applications"),
         ]);
 
         const contacts = await contactsResponse.json();
@@ -342,7 +342,7 @@ setApplicationList(applications.data || []);
               <td>
              {application.resume ? (
   <a
-    href={`http://localhost:5000/${application.resume.replace(/\\/g, "/")}`}
+    href={`https://riyadvi-website-huhp.onrender.com/${application.resume.replace(/\\/g, "/")}`}
     target="_blank"
     rel="noopener noreferrer"
     className="admin-resume"

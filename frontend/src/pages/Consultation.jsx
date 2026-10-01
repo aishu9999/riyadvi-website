@@ -26,7 +26,7 @@ function Consultation() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/consultation",
+        "https://riyadvi-website-huhp.onrender.com/api/consultation",
         {
           method: "POST",
           headers: {

@@ -39,7 +39,7 @@ const handleSubmit = async (event) => {
 
   try {
     const response = await fetch(
-      "http://localhost:5000/api/health-checkup",
+      "https://riyadvi-website-huhp.onrender.com/api/health-checkup",
       {
         method: "POST",
         headers: {
